@@ -34,6 +34,7 @@ public class PersonController {
 
     //we need the mapping to access this code to addattribute to our model and return it to index.html
     @RequestMapping(value={"/","/home","/index"},method = RequestMethod.GET)
+    //same as @GetMapping(value={"/","/home","/index"})  dont need the specify the method as we understand its GET mapping
     public String index(Model model){
         model.addAttribute("message",message);
 
