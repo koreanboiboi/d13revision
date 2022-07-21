@@ -36,6 +36,7 @@ public class D13revisionApplication {
 		CommonsRequestLoggingFilter logger = new CommonsRequestLoggingFilter();
 		logger.setIncludeClientInfo(true);
 		logger.setIncludeQueryString(true);
+		//System.out.println(logger);
 		return logger;
 	}
 
