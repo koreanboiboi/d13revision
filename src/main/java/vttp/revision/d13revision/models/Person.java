@@ -1,7 +1,9 @@
 package vttp.revision.d13revision.models;
 
 
+    //model don't need annotation
 public class Person {
+
 
     private String firstName;
     private String lastName;

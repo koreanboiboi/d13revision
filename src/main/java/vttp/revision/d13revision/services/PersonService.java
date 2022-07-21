@@ -11,6 +11,7 @@ import vttp.revision.d13revision.models.Person;
 public class PersonService {
     private List<Person> persons = new ArrayList<Person>();
 
+    //person created during initialization
     public PersonService(){
         persons.add(new Person("Mark", "Zuckerberg"));
         persons.add(new Person("Elon", "Musk"));
@@ -20,6 +21,7 @@ public class PersonService {
         return this.persons;
     }
 
+    //addperson method by passing in person p
     public void addPerson(Person p){
         persons.add(new Person(p.getFirstName(), p.getLastName()));
     }
